@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FibLux • The Golden Thread</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">FibLux</div>
+      <div class="nav-links">
+        <a href="#calculator">Oracle</a>
+        <a href="#spiral">Spiral</a>
+        <a href="#implementations">Implementations</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <canvas id="hero-canvas" width="1400" height="800"></canvas>
+    <div class="hero-content">
+      <h1 class="hero-title">THE GOLDEN THREAD</h1>
+      <p class="hero-subtitle">Where dynamic programming becomes art.<br>Fibonacci, reimagined in pure luxury.</p>
+      <div class="cta">
+        <a href="#calculator" class="lux-button">Enter the Vault</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="lux-card calculator-card">
+        <h2 class="section-title">The Fibonacci Oracle</h2>
+        <div class="input-group">
+          <input type="number" id="n-input" min="0" max="30" value="15" placeholder="Enter n (0–30)">
+          <button id="compute-btn" class="lux-button">Compute in Gold</button>
+        </div>
+        <div id="result-display" class="result">
+          <div class="result-label">nth Fibonacci</div>
+          <div id="fib-result" class="fib-number">610</div>
+        </div>
+        <div id="sequence-container" class="sequence-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spiral" class="section dark-bg">
+    <div class="container">
+      <h2 class="section-title">Live Fibonacci Spiral</h2>
+      <canvas id="spiral-canvas" width="1100" height="620"></canvas>
+      <p class="caption">Watch the sequence build its own golden spiral — pure dynamic programming visualized in real time.</p>
+    </div>
+  </section>
+
+  <section id="implementations" class="section">
+    <div class="container">
+      <h2 class="section-title">Three Languages • One Elegant Mindset</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-lang="js">JavaScript</button>
+        <button class="tab-btn" data-lang="py">Python</button>
+        <button class="tab-btn" data-lang="java">Java</button>
+      </div>
+      <div id="code-window" class="code-window">
+        <pre id="code-content"><code></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Handcrafted with precision • Dynamic programming that feels opulent</p>
+    <p class="footer-credit">Jordan • Wheaton, Illinois • 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
